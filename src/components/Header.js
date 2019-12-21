@@ -1,18 +1,26 @@
 import React from "react"
 import { Link } from "gatsby"
 
+const links = ["About", "Contact", "Blog"]
+
 const Header = () => {
   return (
     <header>
       <nav>
+        <Link to="/">GatsbyJS Study</Link>
         {window.location.href !== "http://localhost:8000/" ? (
           <Link to="/">Home</Link>
         ) : (
           <></>
         )}
-        <Link to="/about">About</Link>
-        <Link to="/contact">Contact</Link>
-        <Link to="/blog">Blog</Link>
+
+        <ul>
+          {links.map(link => (
+            <li>
+              <Link to={`/${link}`.toLowerCase()}>{link}</Link>
+            </li>
+          ))}
+        </ul>
       </nav>
     </header>
   )
