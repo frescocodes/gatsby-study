@@ -8,11 +8,11 @@ const Header = () => {
     <header>
       <nav>
         <Link to="/">GatsbyJS Study</Link>
-        {window.location.href !== "http://localhost:8000/" ? (
+        {/* {window.location.href !== "http://localhost:8000/" ? (
           <Link to="/">Home</Link>
         ) : (
           <></>
-        )}
+        )} */}
 
         <ul>
           {links.map(link => (

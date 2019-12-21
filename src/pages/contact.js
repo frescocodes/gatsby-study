@@ -1,12 +1,10 @@
 import React from "react"
 
-import Header from "../components/Header"
-import Footer from "../components/Footer"
+import Layout from "../components/Layout"
 
 const ContactPage = () => {
   return (
-    <>
-      <Header />
+    <Layout>
       <div>
         <h1>Contact</h1>
         <a href="mailto:rapper@viper.com">rapper@viper.com</a>
@@ -15,8 +13,7 @@ const ContactPage = () => {
           Twitter
         </a>
       </div>
-      <Footer />
-    </>
+    </Layout>
   )
 }
 

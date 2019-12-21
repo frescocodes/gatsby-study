@@ -1,12 +1,9 @@
 import React from "react"
-
-import Header from "../components/Header"
-import Footer from "../components/Footer"
+import Layout from "../components/Layout"
 
 const BlogPage = () => {
   return (
-    <>
-      <Header />
+    <Layout>
       <div>
         <h1>Title</h1>
         <p>
@@ -18,8 +15,7 @@ const BlogPage = () => {
           laboris ad pariatur tempor id exercitation.
         </p>
       </div>
-      <Footer />
-    </>
+    </Layout>
   )
 }
 
