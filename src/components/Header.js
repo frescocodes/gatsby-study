@@ -5,9 +5,14 @@ const Header = () => {
   return (
     <header>
       <nav>
-        <Link to="about">About</Link>
-        <Link to="contact">Contact</Link>
-        <Link to="blog">Blog</Link>
+        {window.location.href !== "http://localhost:8000/" ? (
+          <Link to="/">Home</Link>
+        ) : (
+          <></>
+        )}
+        <Link to="/about">About</Link>
+        <Link to="/contact">Contact</Link>
+        <Link to="/blog">Blog</Link>
       </nav>
     </header>
   )
