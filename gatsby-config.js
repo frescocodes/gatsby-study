@@ -5,5 +5,9 @@
  */
 
 module.exports = {
+  siteMetadata: {
+    title: "You Gone Die",
+    author: "Rapper Viper",
+  },
   plugins: ["gatsby-plugin-sass"],
 }
