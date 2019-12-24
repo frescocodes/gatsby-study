@@ -1,7 +1,13 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import { header, navLink, navList, siteName } from "./header.module.scss"
+import {
+  header,
+  navLink,
+  navList,
+  siteName,
+  activeNavItem,
+} from "./header.module.scss"
 
 const links = ["Home", "About", "Contact", "Blog"]
 
@@ -17,12 +23,16 @@ const Header = () => {
         <ul className={navList}>
           {links.map(link =>
             link == "Home" ? (
-              <Link to="/" className={navLink}>
+              <Link to="/" className={navLink} activeClassName={activeNavItem}>
                 {link}
               </Link>
             ) : (
               <li>
-                <Link to={`/${link}`.toLowerCase()} className={navLink}>
+                <Link
+                  to={`/${link}`.toLowerCase()}
+                  className={navLink}
+                  activeClassName={activeNavItem}
+                >
                   {link}
                 </Link>
               </li>

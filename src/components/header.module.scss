@@ -1,3 +1,5 @@
+$memecolor: #71eeb8;
+
 .header {
     padding: 1rem 0 3rem;
 }
@@ -8,23 +10,27 @@
 }
 
 .siteName:hover {
-    color: #666666;
+    color: black;
 }
 
 .navLink {
     // padding: 1rem;
-    color: black;
+    color: #666666;
     text-decoration: none;
     font-size: .9rem;
     margin-right: 1rem;
 }
 
 .navLink:hover {
-    color: #666666;
+    color: black;
 }
 
-.nav-list {
+.navList {
     display: flex;
     list-style-type: none;
     margin: 0;
+}
+
+.activeNavItem {
+    color: black;
 }
