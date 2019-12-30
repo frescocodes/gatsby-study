@@ -3,6 +3,8 @@ title: Gatsby Bootcamp
 date: "2019-12-25"
 ---
 
+![Anime Profile Pic]('./anime.png)
+
 # Blog Post Title
 
 Non incididunt veniam do dolor amet ut. Eu aliquip sint tempor consectetur amet eu sint. Excepteur aliqua sint excepteur quis occaecat dolore do anim minim esse dolor. Fugiat commodo exercitation sit laborum commodo deserunt aute velit dolor do nostrud voluptate occaecat quis.
